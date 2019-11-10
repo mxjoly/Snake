@@ -39,10 +39,14 @@ public class Snake {
 		y += ySpeed * Block.SIZE;
 		
 		// The map is a globe
-		if (x < 0) 						x = GameFrame.PXL_WIDTH - Block.SIZE;
-		if (x >= GameFrame.PXL_WIDTH) 	x = 0;		
-		if (y < 0) 						y = GameFrame.PXL_HEIGHT - Block.SIZE;
-		if (y >= GameFrame.PXL_HEIGHT) 	y = 0;
+		if (x < 0) 						
+			x = GameFrame.PXL_WIDTH - Block.SIZE;
+		if (x >= GameFrame.PXL_WIDTH) 	
+			x = 0;		
+		if (y < 0) 						
+			y = GameFrame.PXL_HEIGHT - Block.SIZE;
+		if (y >= GameFrame.PXL_HEIGHT) 	
+			y = 0;
 		
 		// Verify if the snake don't collide himself
 		for (Block b : body) {
